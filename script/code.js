@@ -1,3 +1,4 @@
+//q1
 // variable - a variable is a name of storage locatiion. It could also be defined as a quantity that may be changed accroing to the mathematical problem.
 
 // value - Values in JavaScript include things like Booleans, Strings, arrays, integers, etc. Because values in JavaScript have specific properties that are employed in accordance with requirements and the run-time environment, its behavior is similar to that of other programming languages.
@@ -27,3 +28,18 @@ function fullName(){
 }
 
 fullName()
+
+//q2
+let firstName = 'Laiquah';
+let lastName = 'Cotie';
+let age = '19';
+let listofsubjects = 'mathematics,physical sciences, life orientation, life sciences';
+let address = {
+    streetname : 'Myna Street' ,
+    streetnumber : '8' ,
+    suburb :'Pelican Park',
+    city :'Cape Town',
+    countryname :'South Africa',
+}
+
+console.log(firstName, lastName, age, listofsubjects, address)
