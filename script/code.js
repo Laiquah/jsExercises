@@ -43,3 +43,21 @@ let address = {
 }
 
 console.log(firstName, lastName, age, listofsubjects, address)
+
+//q3
+const numb1 = document.querySelector('#numb1')
+const op = document.querySelector('#operator')
+const numb2 = document.querySelector('#Numb2')
+const answer = document.querySelector('#result')
+const button = document.querySelector('.btn')
+
+
+button.addEventListener('click',()=>{
+    let method = eval(numb1.value + op.value + numb2.value)
+
+    if(numb1,op,numb2 == ''){
+        numb1,op,numb2 === ''
+    }else{
+        answer.innerHTML = method
+    }
+})
