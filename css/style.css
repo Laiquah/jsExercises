@@ -28,6 +28,7 @@ button:hover{
 }
 
 .operator{
-    width:12.4rem !important;
+    width:12rem !important;
+    margin-left: 0.3rem;
 }
 
