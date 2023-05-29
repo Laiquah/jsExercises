@@ -70,31 +70,6 @@ function backwards(subject) {
     console.log(backwards(subject))
 
 //q5
-let details = {
-    name : 'Mish-Al',
-    dateofbirth : '2020-05-31',
-}  
-
-// let date1 = '2023-05-29';
-// let date2 = '2023-05-31';
-
-// let time_difference = "date2.getTime()" - "date1.getTime()";
-
-// let days_difference = time_difference / (1000 * 60 * 60 *24);
-
-// console.log("Number of days between dates" + date1 + "and" + date2 + "are:" + days_difference + "days");
-
-// let dob = '20200531';
-// let year = Number(dob.substr(0, 4));
-// let month = Number(dob.substr(4, 2)) - 1;
-// let day = Number(dob.substr(6, 2));
-// let today = new Date();
-// let old = today.getFullYear() - year;
-// if (today.getMonth() < month || (today.getMonth() == month && today.getDate() < day)) {
-//   old--;
-// }
-// console.log(old);
-
 let info = [
     {
     name: 'Mish-Al',
@@ -109,6 +84,37 @@ let today = new Date();
 
 console.log(info[0].dob.getDate() - today.getDate(),"2 Days Left until Mish's birthday");
 console.log('Mish is: ', today.getFullYear() - info[0].dob.getFullYear(), "years old!")
+
+//switch exercise
+let switchFunction = prompt("Enter a number from 1 - 100: ")
+    switch(true){
+        case switchFunction >= 90 && switchFunction <= 100:
+            // if (switchFunction >= 90 || switchFunction <= 100){
+            //     console.log("Well Done!")
+            console.log("Well Done!")
+            // }
+            break
+            case switchFunction >= 80 && switchFunction <= 89:
+                console.log("Way To Go!")
+                break
+                case switchFunction >= 75 && switchFunction <= 79:
+                        console.log("Keep It Up!")
+                    break
+                    case (switchFunction >= 60 && switchFunction <= 74):
+                        console.log("You Did Good")
+                        break
+                        case switchFunction >= 50 && switchFunction <= 59:
+                            console.log("That Was Good!")
+                            break
+                            case switchFunction < 50:
+                                console.log("You Failed!")
+                                break
+                                default:
+                                    "Nothing was entered"
+    }
+
+
+
 
 
 
