@@ -62,8 +62,67 @@ button.addEventListener('click',()=>{
     }
 })
 
+//q4
 let subject = "programming";
 function backwards(subject) {
     return subject.split('').reverse().join('')
     }
     console.log(backwards(subject))
+
+//q5
+let details = {
+    name : 'Mish-Al',
+    dateofbirth : '2020-05-31',
+}  
+
+// let date1 = '2023-05-29';
+// let date2 = '2023-05-31';
+
+// let time_difference = "date2.getTime()" - "date1.getTime()";
+
+// let days_difference = time_difference / (1000 * 60 * 60 *24);
+
+// console.log("Number of days between dates" + date1 + "and" + date2 + "are:" + days_difference + "days");
+
+// let dob = '20200531';
+// let year = Number(dob.substr(0, 4));
+// let month = Number(dob.substr(4, 2)) - 1;
+// let day = Number(dob.substr(6, 2));
+// let today = new Date();
+// let old = today.getFullYear() - year;
+// if (today.getMonth() < month || (today.getMonth() == month && today.getDate() < day)) {
+//   old--;
+// }
+// console.log(old);
+
+let info = [
+    {
+    name: 'Mish-Al',
+    dob: new Date('2002-5-31')
+},
+{
+    name:'Laiquah',
+    dob: '2017-06-24'
+}
+]
+console.log(info[0].dob)
+let birth = info.find(info => info.dob === info.dob)
+let today = new Date();
+console.log(today)
+console.log(today.getFullYear())
+console.log(info[0].dob.getFullYear())
+console.log(info[0].dob.getDate())
+console.log(info[0].dob.getDate() - today.getDate(),"2 Days Left until Mish's birthday");
+console.log('Mish is: ', today.getFullYear() - info[0].dob.getFullYear(), "years old!")
+
+
+
+
+
+
+
+
+
+
+
+
