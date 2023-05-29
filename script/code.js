@@ -61,3 +61,9 @@ button.addEventListener('click',()=>{
         answer.innerHTML = method
     }
 })
+
+let subject = "programming";
+function backwards(subject) {
+    return subject.split('').reverse().join('')
+    }
+    console.log(backwards(subject))
