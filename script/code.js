@@ -99,19 +99,14 @@ let info = [
     {
     name: 'Mish-Al',
     dob: new Date('2002-5-31')
-},
-{
-    name:'Laiquah',
-    dob: '2017-06-24'
 }
+
 ]
-console.log(info[0].dob)
+
 let birth = info.find(info => info.dob === info.dob)
 let today = new Date();
-console.log(today)
-console.log(today.getFullYear())
-console.log(info[0].dob.getFullYear())
-console.log(info[0].dob.getDate())
+
+
 console.log(info[0].dob.getDate() - today.getDate(),"2 Days Left until Mish's birthday");
 console.log('Mish is: ', today.getFullYear() - info[0].dob.getFullYear(), "years old!")
 
